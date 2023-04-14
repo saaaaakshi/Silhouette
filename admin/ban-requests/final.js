@@ -1,0 +1,75 @@
+const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggle.addEventListener("click",() => {
+    document.querySelector(".style-switcher").classList.toggle("open");
+})
+
+window.addEventListener("scroll",() => {
+    if(document.querySelector(".style-switcher").classList.contains("open")){
+        document.querySelector(".style-switcher").classList.remove("open");
+    }
+})
+
+
+const alternateStyles = document.querySelectorAll(".alternate-style");
+
+function setActiveStyle(color){
+    alternateStyles.forEach((style) => {
+        if(color == style.getAttribute("title")){
+            style.removeAttribute("disabled");
+        }
+        else{
+            style.setAttribute("disabled", "true");
+
+        }
+    })
+}
+
+
+const dayNight = document.querySelector(".day-night");
+dayNight.addEventListener("click",() =>{
+    dayNight.querySelector("i").classList.toggle("fa-sun");
+    dayNight.querySelector("i").classList.toggle("fa-moon");
+    document.body.classList.toggle("dark");
+ 
+})
+
+
+const tableTheme = document.querySelector(".table");
+dayNight.addEventListener("click",() =>{
+    tableTheme.classList.toggle("table-light");
+    tableTheme.classList.toggle("table-dark");
+})
+
+
+
+window.addEventListener("load",() =>{
+if(dayNight.querySelector("i").classList.contains("fa-sun")){
+    tableTheme.classList.add("table-light");
+}
+else if(dayNight.querySelector("i").classList.contains("fa-moon")){
+    tableTheme.classList.add("table-dark");
+
+}
+})
+
+
+
+window.addEventListener("load",() =>{
+    if(document.body.classList.contains("dark")){
+        dayNight.querySelector("i").classList.add("fa-sun");
+    }
+    else{
+        dayNight.querySelector("i").classList.add("fa-moon");
+
+    }
+})
+
+
+
+
+const year = document.getElementById("year")
+const thisYear = new Date().getFullYear()
+year.setAttribute("datetime", thisYear)
+year.textContent= thisYear
+
+{/* <i class="fa-solid fa-sun"></i> */}
