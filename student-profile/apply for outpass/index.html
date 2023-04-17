@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile Page - Apply For Outpass</title>
+    <title>Student Profile Page - Request for Ban Upliftment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,7 +21,7 @@
 <body class="dark">
     <!-- MAIN CONTAINER START -->
     <header class="std-pro">
-        Student Panel 
+        Student Panel
     </header>
     <!-- ASIDE START -->
     <div class="aside">
@@ -32,8 +32,9 @@
             <span></span>
         </div>
         <ul class="nav choosekaro">
-            <li><a href="#" class="active"><i class="fas fa-lock"></i> Home </a></li>
-            <li><a href="#"><i class="fas fa-lock"></i> Change Password </a></li>            <li><a href="#"><i class="fa fa-list"></i> Apply For Outpass</a></li>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Home </a></li>
+            <li><a href="#"><i class="fas fa-lock"></i> Change Password </a></li>
+            <li><a href="#"><i class="fa fa-list"></i> Apply For Outpass</a></li>
             <li><a href="#"><i class="fas fa-ban"></i> Request For Upliftment Of Ban</a></li>
             <li><a href="#"><i class="fas fa-right-from-bracket"></i>  Logout</a></li>
             <!-- <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li> -->
@@ -44,22 +45,39 @@
     <!-- MAIN CONTENT START -->
     <div class="main-content">
         <section class="home section"> 
+            
             <div class="container">
+                <div class="personal-info">
+                    <ul>
+                        <li><label for="name">Name:</label> <input type="text"></li>
+                        
+                        <li>Roll Number: <input type="text"> </li>
+                        <li>Contact Number: <input type="number"> </li>
+                        <li>Date Of Leaving: <input type="date"> </li>
+                        <li>Date Of Return: <input type="date"></li>
+                        <li>Reason For Going Out: <input type="text"> </li>
+                       
+                        <li>Faculty Advisor: <input type="text"></li>
+                    </ul>
+                </div>
                 <div class="row">
                     <div class="home-info padd-15">
                         <!-- <div class="hello">Hello, <span class="name">Sakshi Kusale</span></div> -->
                         <!-- <h3 class="my-profession">I'm a <span class="typing">B Tech Student</span></h3> -->
-                        <div class="personal-info">
+                        <div class="olalala">
+                        <!-- <div class="personal-info">
                             <ul>
-                                <li>Name: </li>
-                                <li>Roll Number: </li>
-                                <li>Contact Number: </li>
-                                <li>Banned On: </li>
-                                <li>Reason For Ban: </li>
-                                <li>Your Justification: <input type="textarea"> </li>
+                                <li>Name: <input type="text"></li>
+                                <li>Roll Number: <input type="text"> </li>
+                                <li>Contact Number: <input type="number"> </li>
+                                <li>Date Of Leaving: <input type="date"> </li>
+                                <li>Date Of Return: <input type="date"></li>
+                                <li>Reason For Going Out: <input type="text"> </li>
+                               
                                 <li>Faculty Advisor: </li>
                             </ul>
-                        </div>
+                        </div> -->
+                    </div>
 
                          <a href="#contant" class="btn hire-me">Submit</a>
                     
@@ -95,7 +113,7 @@
     </div>
     <!-- STYLE SWITCHER ENDS -->
     <footer class="footer">
-        <p> <span class="nowrap">Copyright &copy; <time id="year"></time> </span> <span class="nowrap">Silhouette</span></p>
+        <p> <span class="nowrap">Copyright &copy; <time id="year"></time> </span> <span class="nowrap">Silhouette. All rights reserved.</span></p>
     </footer>
 
     <script src="index.js"></script>

@@ -27,7 +27,7 @@ h1{
   display: flex;
   flex-wrap: wrap;
 }
-.wrapper .menu-btn{
+/* .wrapper .menu-btn{
   position: absolute;
   left: 20px;
   top: 10px;
@@ -56,30 +56,27 @@ h1{
 .wrapper .menu-btn i.fa-times{
   opacity: 0;
 }
-/* #btn:checked ~ .menu-btn i.fa-times{ */
-  /* opacity: 1; */
-  /* transform: rotate(-180deg); */
-/* } */
-/* #btn:checked ~ .menu-btn i.fa-bars{ */
-  /* opacity: 0; */
-  /* transform: rotate(180deg); */
-/* } */
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+} */
 #sidebar{
-  position: static;
+  position: fixed;
   background: #404040;
   height: 100%;
   width: 270px;
-  /* overflow: hidden; */
+  overflow: hidden;
   left: -270px;
-  /* transition: all 0.3s ease; */
+  transition: all 0.3s ease;
 }
-/* #btn:checked ~ #sidebar{
+#btn:checked ~ #sidebar{
   left: 0;
-
-} */
-
+}
 #sidebar .title{
-  position: absolute;
   line-height: 65px;
   text-align: center;
   background: #333;
@@ -177,8 +174,8 @@ h1{
 }
 
 .footer-class{
-  /* position: sticky; */
-  /* top: 0px; */
+  position: sticky;
+  top: 0px;
   background-color: #202020;
   color:#f2f2f2;
   text-align: center;
@@ -191,9 +188,10 @@ h1{
     margin-right: 20px;
 }
 
-footer {
-
-
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background-color: #4a4a4a;
     color: white;
@@ -204,9 +202,6 @@ footer {
     /* padding: 2px; */
     transform: background-color 0.4s;
     font-size: 20px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
 }
 
 #tthaha{
@@ -215,12 +210,11 @@ footer {
 
 .table{
     margin-right: 20px;
+    
+
 }
 
 #act{
     position: static;
 }
 
-.hidden{
-  display: none;
-}

@@ -24,9 +24,6 @@ body{
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
 }
-.personal-info ul{
-    margin-left: 120px;
-}
 *{
     margin:0;
     padding:0;
@@ -34,8 +31,8 @@ body{
     text-decoration: none;
     box-sizing: border-box;
     /* --skin-color:#ec1839; */
-    
-    
+ 
+
 }
 
 .btn{
@@ -48,7 +45,6 @@ body{
     display: inline-block;
     white-space: nowrap;
     transition: all 0.3s ease;
-    margin-left: 120px;
 }
 
 .btn:hover{
@@ -125,8 +121,8 @@ ul{
 
 .aside .logo{
     position: absolute;
-    top: 50px;
-    font-size: 30px;
+    top: 15px;
+    font-size: 10px;
     text-transform: capitalize;
 
 }
@@ -409,6 +405,7 @@ ul{
     word-spacing: 3px;
     font-size: 20px;
 }
+
 
 
 @media (max-width:1199px){
